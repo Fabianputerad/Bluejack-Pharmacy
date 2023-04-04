@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@drawable/android_small___2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogIn_text"
+        android:text="Log In"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="25dp"/>
+
+    <EditText
+        android:id="@+id/EmailLogIn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LogIn_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PasswordLogIn_edit"
+        android:hint="Password"
+        android:layout_below="@id/EmailLogIn_edit"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/button_shape"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        />
+
+
+
+        <Button
+            android:id="@+id/LoginPage"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="170dp"
+            android:layout_below="@+id/PasswordLogIn_edit"
+            android:background="@drawable/button_color"
+            android:text="Log In"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/signUp_loginpage"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="275dp"
+            android:layout_below="@+id/LoginPage"
+            android:text="Sign Up?"
+            android:background="@drawable/button_shape"
+            />
+
+</RelativeLayout>

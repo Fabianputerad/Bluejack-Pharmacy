@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardElevation="16dp"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/item_medicine"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_medicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Medicine"
+                android:textSize="24dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/tv_medicineDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Medicine"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_medicinePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Medicine"
+            android:textSize="16dp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
